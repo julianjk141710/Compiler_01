@@ -28,7 +28,7 @@ public class LexicalTest {
         try {
             reader = new BufferedReader(new FileReader(file));
             String tempString = null;
-            // Ò»´Î¶ÁÈëÒ»ĞĞ£¬Ö±µ½¶ÁÈënullÎªÎÄ¼ş½áÊø
+            // ä¸€æ¬¡è¯»å…¥ä¸€è¡Œï¼Œç›´åˆ°è¯»å…¥nullä¸ºæ–‡ä»¶ç»“æŸ
             while ((tempString = reader.readLine()) != null) {
                 this.text.append(tempString);
             }
@@ -47,11 +47,11 @@ public class LexicalTest {
     }
     public static void main(String[] args) throws LexicalException {
         LexicalTest lexicalTest = new LexicalTest();
-        String filename = "D:/hello.txt";
+        String filename = args[0];
         lexicalTest.readFileByLines(filename);
         lexicalTest.setLexicalAnalysis(lexicalTest.getText());
         ArrayList<Token> tokens = lexicalTest.lexicalAnalysis();
-        //System.out.println("¼ÇÒä·û\t\t->\t\tµ¥´Ê");
+        //System.out.println("è®°å¿†ç¬¦\t\t->\t\tå•è¯");
         for (Token i : tokens) {
             //System.out.println(i.getMemorySymbol());
         }
