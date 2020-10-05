@@ -15,8 +15,10 @@ public class LexicalAnalysis {
     private LexicalHandler lexicalHandler;
     private String text;
     private int index;
+    private int flag;
     private ArrayList<Token> tokens;
     public LexicalAnalysis(String text) {
+        this.flag ^= this.flag;
         this.text = text;
         this.index ^= this.index;
         this.reservers = new HashSet<String>();
@@ -66,8 +68,14 @@ public class LexicalAnalysis {
         while (index < text.length()) {
             while (lexicalHandler.isBlank((character = lexicalHandler.getChar(text, index)))) {
                 addIndex();
+                if (index >= text.length()) {
+                    this.flag += 1;
+                    break;
+                }
             }
-
+            if (this.flag != 0) {
+                break;
+            }
             if (lexicalHandler.isLetter(character)) {
                 lexicalHandler.catToken(token, character);
                 addIndex();
