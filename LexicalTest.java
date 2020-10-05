@@ -51,9 +51,9 @@ public class LexicalTest {
         String filename = args[0];
         //String filename = "D:/sourceCode.txt";
         lexicalTest.readFileByLines(filename);
-        System.out.println(lexicalTest.getText());
+        //System.out.println(lexicalTest.getText());
         lexicalTest.setLexicalAnalysis(lexicalTest.getText());
-        System.out.println(lexicalTest.getText().length());
+        //System.out.println(lexicalTest.getText().length());
         ArrayList<Token> tokens = lexicalTest.lexicalAnalysis();
         //System.out.println("记忆符\t\t->\t\t单词");
         for (Token i : tokens) {
