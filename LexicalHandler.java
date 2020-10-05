@@ -12,7 +12,7 @@ public class LexicalHandler {
     }
 
     /**
-     * ½«×Ö·ûÆ´½Óµ½×Ö·û´®Ö®ºó
+     * å°†å­—ç¬¦æ‹¼æ¥åˆ°å­—ç¬¦ä¸²ä¹‹å
      * @param token
      * @param character
      */
@@ -21,7 +21,7 @@ public class LexicalHandler {
     }
 
     /**
-     * Çå¿Õ×Ö·û´®
+     * æ¸…ç©ºå­—ç¬¦ä¸²
      * @param token
      */
     public void clearToken(StringBuilder token) {
@@ -29,7 +29,7 @@ public class LexicalHandler {
     }
 
     /**
-     * ÅĞ¶ÏÒ»¸ö×Ö·ûÊÇ²»ÊÇ¿Õ×Ö·û
+     * åˆ¤æ–­ä¸€ä¸ªå­—ç¬¦æ˜¯ä¸æ˜¯ç©ºå­—ç¬¦
      * @param character
      * @return
      */
@@ -41,7 +41,7 @@ public class LexicalHandler {
     }
 
     /**
-     * ¶ÁÈ¡Ò»¸ö¿Õ×Ö·û´®²¢Ìø¹ı
+     * è¯»å–ä¸€ä¸ªç©ºå­—ç¬¦ä¸²å¹¶è·³è¿‡
      * @param character
      * @param index
      * @return
@@ -54,7 +54,7 @@ public class LexicalHandler {
     }
 
     /**
-     * ×Ö·ûÖ¸ÕëÔö¼Ó
+     * å­—ç¬¦æŒ‡é’ˆå¢åŠ 
      * @param index
      * @return
      */
@@ -64,7 +64,7 @@ public class LexicalHandler {
     }
 
     /**
-     * ×Ö·ûÖ¸Õë¼õÉÙ
+     * å­—ç¬¦æŒ‡é’ˆå‡å°‘
      * @param index
      * @return
      */
@@ -74,7 +74,7 @@ public class LexicalHandler {
     }
 
     /**
-     * ÅĞ¶ÏÒ»¸ö×Ö·ûÊÇ²»ÊÇÊı×Ö
+     * åˆ¤æ–­ä¸€ä¸ªå­—ç¬¦æ˜¯ä¸æ˜¯æ•°å­—
      * @param character
      * @return
      */
@@ -86,7 +86,7 @@ public class LexicalHandler {
     }
 
     /**
-     * ÅĞ¶ÏÒ»¸ö×Ö·ûÊÇ²»ÊÇ×ÖÄ¸
+     * åˆ¤æ–­ä¸€ä¸ªå­—ç¬¦æ˜¯ä¸æ˜¯å­—æ¯
      * @param character
      * @return
      */
@@ -98,7 +98,7 @@ public class LexicalHandler {
     }
 
     /**
-     * ÅĞ¶ÏÒ»¸öµ¥´ÊÊÇ²»ÊÇ¹Ø¼ü×Ö
+     * åˆ¤æ–­ä¸€ä¸ªå•è¯æ˜¯ä¸æ˜¯å…³é”®å­—
      * @param reservers
      * @param token
      * @return
@@ -111,7 +111,7 @@ public class LexicalHandler {
     }
 
     /**
-     * ½«×Ö·û´®×ª»¯ÎªÊı×Ö
+     * å°†å­—ç¬¦ä¸²è½¬åŒ–ä¸ºæ•°å­—
      * @param token
      * @return
      */
@@ -120,7 +120,7 @@ public class LexicalHandler {
     }
 
     /**
-     * Å×³öÒì³£
+     * æŠ›å‡ºå¼‚å¸¸
      * @return
      */
     public LexicalException throwError() {
@@ -128,7 +128,7 @@ public class LexicalHandler {
     }
 
     /**
-     * ÅĞ¶Ï×Ö·ûÊÇ·ñÎª½ç·û
+     * åˆ¤æ–­å­—ç¬¦æ˜¯å¦ä¸ºç•Œç¬¦
      * @param delimiters
      * @param character
      * @return
@@ -154,4 +154,4 @@ public class LexicalHandler {
 //        sb.append(a);
 //        System.out.println(sb.toString());
     }
-}
+} 
