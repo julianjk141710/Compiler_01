@@ -31,6 +31,7 @@ public class LexicalTest {
             // 一次读入一行，直到读入null为文件结束
             while ((tempString = reader.readLine()) != null) {
                 this.text.append(tempString);
+                this.text.append(" ");
             }
             reader.close();
         } catch (IOException e) {
@@ -48,8 +49,11 @@ public class LexicalTest {
     public static void main(String[] args) throws LexicalException {
         LexicalTest lexicalTest = new LexicalTest();
         String filename = args[0];
+        //String filename = "D:/sourceCode.txt";
         lexicalTest.readFileByLines(filename);
+        System.out.println(lexicalTest.getText());
         lexicalTest.setLexicalAnalysis(lexicalTest.getText());
+        System.out.println(lexicalTest.getText().length());
         ArrayList<Token> tokens = lexicalTest.lexicalAnalysis();
         //System.out.println("记忆符\t\t->\t\t单词");
         for (Token i : tokens) {
