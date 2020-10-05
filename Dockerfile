@@ -1,5 +1,4 @@
-FROM openjdk:11-alpine
-COPY ./* /app/
+FROM openjdk:11
 WORKDIR /app/
-RUN javac -d ./output ./LexicalTest.java
-WORKDIR /app/output
+COPY ./* ./
+RUN javac LexicalTest.java
