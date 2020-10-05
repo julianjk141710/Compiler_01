@@ -1,4 +1,4 @@
-package Lexical;
+
 
 public class Token {
     private int typeNum;
